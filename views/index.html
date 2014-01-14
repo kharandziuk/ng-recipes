@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>My AngularJS App</title>
+  <link rel="stylesheet" href="static/css/bootstrap.css">
+</head>
+<body ng-app="MyApp">
+<!-- Enter you name: <input type="text" ng-model="name">
+<p>Hello {{name}}</p>
+<div ng-controller="MyCtrl">
+    <button ng-click="toggle()">Toggle</button>
+    <p ng-show="visible">Hello</p>
+    {{ text }}
+</div>
+-->
+<label for="checkbox">
+    <input type="checkbox" ng-model="visible">toggle me
+</label>
+<div ng-controller="MyCtrl">
+Enter you name: <input type="text" ng-model="name">
+<p>
+{{ greeting }}
+</p>
+</div>
+<div show="visible">
+    "fine"
+</div>
+    
+    <script src="static/components/angular/angular.js"></script>
+    <script src="static/js/app.js"></script>
+</body>
+</html>
